@@ -1,0 +1,7 @@
+{
+  "name": "dsl-generated dependencies",
+  "dependencies": {
+    "ng-token-auth": "latest",
+    "angular-cookies": "latest"
+  }
+}

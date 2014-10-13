@@ -1,0 +1,150 @@
+@import 'http://fonts.googleapis.com/css?family=Dosis';
+@import 'mobile-angular-ui-base.min';
+@import 'font-awesome';
+
+// Color
+
+h1, h2, h3, h4, h5, h6, p {
+	font-family: 'Raleway', sans-serif;
+}
+
+body {background-color: #E74C3C}
+
+.text-muted {color: #fff;
+	& a {
+		   color: #fff;
+		   font-style: italic;
+	}
+}
+
+
+// Removing borders and rounded corners
+
+.btn {
+	border-radius: 0px !important;
+	border: 0px !important;
+}
+
+.label {
+	border-radius: 0px !important;
+	border: 0px !important;
+}
+
+a {
+	text-decoration: none !important;
+}
+
+.form-control.devise {
+	height: 46px;
+}
+
+// Layouts
+
+.header-links {
+	margin-top: 24px;
+	margin-left: 10px;
+}
+
+span.header-link {
+	color: #fff;
+	margin: 0px 4px;
+	&:hover, &:active {
+	    text-decoration: none;
+	}
+}
+
+span.header-link {
+	color: #fff;
+	margin: 0px 4px;
+	&:hover, &:active {
+	    text-decoration: none;
+	}
+}
+
+a.home {
+	color: #fff;
+	font-style: italic;
+	text-decoration: none;
+	&:hover, &:active {
+	    color: #fff;
+	}
+}
+
+.logo .img-responsive {
+    margin: 0 auto;
+}
+
+.jumbotron.home {
+	background-color: #E74C3C;
+	color: #fff;
+	text-align: center;
+	padding: 15px;
+}
+
+ul.social {
+	margin-top:4px;
+}
+
+li.social {
+	margin:10px;
+}
+
+.social .fa {
+	margin: 2px 5px;
+}
+
+.btn.fb-share{
+color: white;
+background-color: #3b5998;
+	&:hover, &:active {
+	    background-color: #4c70ba;
+	}
+}
+
+.btn.tw-share{
+color: white;
+background-color: #1bb2e9;
+	&:hover, &:active {
+	    background-color: #4ac2ed;
+	}
+}
+
+// Home Page Form
+
+	textarea.home {padding:10px 32px 10px 10px !important;}
+	
+	.include-text {color: #fff; margin: 10px 0px;}
+
+	.include-home {margin: 5px 0px;}
+
+	.zero-clipboard {
+		display: block;
+		positon: relative;
+	}
+
+	.btn-clipboard {
+		position: absolute;
+		top: 0;
+		right: 0;
+		z-index: 10;
+		display: block;
+		margin-right: 15px;
+		padding: 5px 8px;
+		font-size: 12px;
+		color: #777;
+		cursor: pointer;
+		background-color: #fff;
+		border: 1px solid #e1e1e8;
+		border-radius: 0 4px 0 4px;
+	}
+
+// Footer
+
+	.footer { margin: 30px 0px;}
+
+	.app-icons {margin: 60px 0px 30px 0px;}
+
+	.footer-link {
+		color: #fff;
+		margin: 10px 4px
+	}

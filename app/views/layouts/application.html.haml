@@ -1,0 +1,78 @@
+!!!
+%html.no-js
+  %head
+    %title= RailsAngularDevise::Application.config.app_name
+    = stylesheet_link_tag    'application', media: 'all'
+    = javascript_include_tag 'ng-application'
+    = csrf_meta_tags
+    %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
+    / %meta{:content => "!", :name => "fragment"}/
+  %body{"ng-app" => "StartupRI"}
+    / Sidebars
+    #mainSidebar.sidebar.sidebar-left{"parent-active-class" => "sidebar-left-in", :toggleable => ""}
+      .scrollable
+        .scrollable-content
+          .text-center{:bubble => "", :target => "mainSidebar", :toggle => "off"}
+            %br/
+            %a{:href => "/"}
+              %img.text-center{alt: "Verify Business", src: "assets/logo.png", :alt => 'CallRed'}
+          %br/
+          - if user_signed_in?
+            .list-group{:bubble => "", :target => "mainSidebar", :toggle => "off"}
+              %a.list-group-item{:href => "/inbox"}
+                Inbox
+                %i.fa.fa-chevron-right.pull-right
+              %a.list-group-item{:href => "/account"}
+                Account
+                %i.fa.fa-chevron-right.pull-right
+              %a.list-group-item{:href => "/upgrade"}
+                Upgrade
+                %i.fa.fa-chevron-right.pull-right
+          - else
+            .list-group{:bubble => "", :target => "mainSidebar", :toggle => "off"}
+              %a.list-group-item{:href => "/#/signin"}
+                Sign In
+                %i.fa.fa-chevron-right.pull-right
+              %a.list-group-item{:href => "/#/signup"}
+                Sign Up
+                %i.fa.fa-chevron-right.pull-right
+          .list-group{:bubble => "", :target => "mainSidebar", :toggle => "off"}
+            %a.list-group-item{:href => "/#/about"}
+              About
+              %i.fa.fa-chevron-right.pull-right
+            %a.list-group-item{:href => "/#/business"}
+              Businesses
+              %i.fa.fa-chevron-right.pull-right
+            %a.list-group-item{:href => "/#/hiring"}
+              Jobs
+              %i.fa.fa-chevron-right.pull-right
+            %a.list-group-item{:href => "/#/press"}
+              Press
+              %i.fa.fa-chevron-right.pull-right
+          %ul.social.nav.nav-pills
+            %li.social
+              %a{ :'addthis:url' => 'http://startupri.org', :class => "btn fb-share addthis_button_facebook" }
+                %i.fa.fa-facebook
+                SHARE
+            %li.social
+              %a{ :'addthis:url' => 'http://startupri.org', :class => "btn tw-share addthis_button_twitter" }
+                %i.fa.fa-twitter
+                SHARE
+          .footer.text-center{:bubble => "", :target => "mainSidebar", :toggle => "off"}
+            %span.footer-link © 2014
+            = link_to("/#/terms") do
+              %span.footer-link Terms
+            = link_to("/#/privacy") do
+              %span.footer-link Privacy
+    .container.app
+      %div{"ng-class" => "viewBackground"}
+        .scrollable
+          .scrollable-content
+            .sidebar-toggle
+              .mobile-bar
+                .col-xs-6
+                  %i.fa.fa-bars.btn-lg{"ng-click" => "toggle('mainSidebar')"}
+                .col-xs-6
+                  .text-right
+                    = link_to image_tag('logo.png', :border=>0, :alt => 'StartupRI', height: '40px', width: '143px' ), root_path, :class => ""
+            = yield

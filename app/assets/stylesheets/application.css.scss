@@ -1,0 +1,311 @@
+/*
+ *= require font-awesome
+ */
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,600,400);
+@import 'mobile-angular-ui-hover.min';
+@import 'mobile-angular-ui-base.min';
+@import 'mobile-angular-ui-desktop.min';
+@import 'toastr.min';
+@import 'font-awesome';
+
+// Color
+
+h1 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400; 
+}
+
+h2, h3, h4, h5, h6 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400; 
+}
+
+p {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400; 
+}
+
+.page-title {
+ 	text-align: center;
+ }
+ 
+.text-muted {color: #444;
+	& a {
+		   color: #444;
+		   font-style: italic;
+	}
+}
+
+.background-red {
+	background: #E74C3C;
+}
+
+.jumbotron {
+	background: none;
+}
+
+.top-bar {
+	background: #E74C3C;
+	color: #fff;
+	padding: 14px;
+}
+
+
+.trending-block {
+	margin: 30px 0;
+}
+
+.btn-link.send-button {
+	color: #fff;
+}
+
+.btn-link.send-button:hover{
+	text-decoration: none;
+}
+
+.container.app {
+	background-color: #fff;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+.help-title {
+	margin-top: 15px;
+}
+
+.row { margin: 0px !important;}
+
+// Removing borders and rounded corners
+
+.btn {
+	border-radius: 0px !important;
+	border: 0px !important;
+}
+
+.label {
+	border-radius: 0px !important;
+	border: 0px !important;
+}
+
+a {
+	text-decoration: none !important;
+}
+
+.form-control.devise {
+	height: 46px;
+}
+
+// Layouts
+
+.fa.fa-bars {
+	margin-top: 2px;
+}
+
+.header-links {
+	margin-top: 24px;
+	margin-left: 10px;
+}
+
+span.header-link {
+	color: #fff;
+	margin: 0px 4px;
+	&:hover, &:active {
+	    text-decoration: none;
+	}
+}
+
+span.header-link {
+	color: #fff;
+	margin: 0px 4px;
+	&:hover, &:active {
+	    text-decoration: none;
+	}
+}
+
+.btn-block.submit-white {
+	background-color: #fff;
+}
+
+a.home {
+	color: #444;
+	font-style: italic;
+	text-decoration: none;
+	&:hover, &:active {
+	    color: #444;
+	}
+}
+
+.send
+
+a.send {
+	color: #1bb2e9;
+	font-weight: 500;
+	text-align: center;
+	margin: 10px 0;
+	&:hover, &:active {
+	    color: #1bb2e9;
+	}
+}
+
+.logo .img-responsive {
+    margin: 0 auto;
+}
+
+.sidebar.sidebar-left {
+	background-color: #fff;
+	border-right: 1px solid #e1e8ed;
+}
+
+.mobile-bar {
+	color: #E74C3C;
+	height: 60px;
+	margin-top: 20px;
+}
+
+.btn-danger {
+	color: #fff;
+		background-color: #E74C3C;
+		&:hover, &:active {
+			background-color: #E74C3C;
+			}
+}
+
+.media.sample-messages {
+	margin: 10px 0px;
+}
+
+.home-motto{
+	color: #fff;
+	text-align: center;
+	margin: 50px 20px;
+}
+
+.home-motto {
+	font-weight: 400;
+}
+
+.home-submit {
+	margin: 10px 0px;
+}
+
+ul.social {
+	margin-top:4px;
+}
+
+li.social {
+	margin:10px;
+}
+
+.social .fa {
+	margin: 2px 5px;
+}
+
+.btn.fb-share{
+color: white;
+background-color: #3b5998;
+	&:hover, &:active {
+	    background-color: #4c70ba;
+	}
+}
+
+.btn.tw-share{
+color: white;
+background-color: #1bb2e9;
+	&:hover, &:active {
+	    background-color: #4ac2ed;
+	}
+}
+
+.btn.add-business{
+color: white;
+background-color: #E74C3C;
+	&:hover, &:active {
+	    background-color: #E74C3C;
+	}
+}
+
+// Home Page Form
+	
+	textarea.home {padding:10px 32px 10px 10px !important;}
+	
+	.include-text {color: #FFF !important; margin: 10px 0px;}
+
+	.include-home {margin: 5px 0px;}
+
+	.zero-clipboard {
+		display: block;
+		positon: relative;
+	}
+
+	.btn-clipboard {
+		position: absolute;
+		top: 0;
+		right: 0;
+		z-index: 10;
+		display: block;
+		margin-right: 15px;
+		padding: 5px 8px;
+		font-size: 12px;
+		color: #777;
+		cursor: pointer;
+		background-color: #fff;
+		border: 1px solid #e1e1e8;
+		border-radius: 0 4px 0 4px;
+	}
+
+	.social.nav {
+		display: table;
+	    margin: 0 auto;
+	}
+
+// Footer
+
+	.footer {margin: 20px;}
+
+	.app-icons {margin: 60px 0px 30px 0px;}
+
+	.footer-link {
+		color: #e1e1e8;
+		margin: 5px 4px
+	}
+
+
+// About Page
+	
+	#features{
+		color: #fff;
+		& h2 { color: #fff; text-align: center;
+		}
+		& p {
+			color: #fff;
+		}
+	}
+
+	.feature.jumbotron {
+		color: black;
+		margin: 20px 0px;
+		padding: 30px 20px;
+	}
+
+	.feature {margin-bottom: 50px;}
+
+	.team-links {
+		text-align: center;
+		margin-bottom: 20px;
+	}
+
+	.team-social {
+		font-size: 30px;
+	}
+
+// Hiring Page
+
+.jobs {
+	margin-top: 30px;
+}
+
+.apply-box {
+	text-align: center;
+	margin: 20px;
+}
