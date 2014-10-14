@@ -15,37 +15,19 @@
           .text-center{:bubble => "", :target => "mainSidebar", :toggle => "off"}
             %br/
             %a{:href => "/"}
-              %img.text-center{alt: "StartupRI", src: "assets/logo.png", :alt => 'CallRed'}
+              %img.text-center{alt: "StartupRI", src: "assets/logo.png"}
+          %br/
           %br/
           .list-group{:bubble => "", :target => "mainSidebar", :toggle => "off"}
-            %a.list-group-item{:href => "/#/about"}
+            %a.list-group-item{:href => "/startups"}
               Startups
               %i.fa.fa-chevron-right.pull-right
-            %a.list-group-item{:href => "/#/business"}
+            %a.list-group-item{:href => "/events"}
               Events
               %i.fa.fa-chevron-right.pull-right
-            %a.list-group-item{:href => "/#/hiring"}
+            %a.list-group-item{:href => "/resources"}
               Resources
               %i.fa.fa-chevron-right.pull-right
-          - if user_signed_in?
-            .list-group{:bubble => "", :target => "mainSidebar", :toggle => "off"}
-              %a.list-group-item{:href => "/inbox"}
-                Inbox
-                %i.fa.fa-chevron-right.pull-right
-              %a.list-group-item{:href => "/account"}
-                Account
-                %i.fa.fa-chevron-right.pull-right
-              %a.list-group-item{:href => "/upgrade"}
-                Upgrade
-                %i.fa.fa-chevron-right.pull-right
-          - else
-            .list-group{:bubble => "", :target => "mainSidebar", :toggle => "off"}
-              %a.list-group-item{:href => "/#/signin"}
-                Sign In
-                %i.fa.fa-chevron-right.pull-right
-              %a.list-group-item{:href => "/#/signup"}
-                Sign Up
-                %i.fa.fa-chevron-right.pull-right
           %ul.social.nav.nav-pills
             %li.social
               %a{ :'addthis:url' => 'http://startupri.org', :class => "btn fb-share addthis_button_facebook" }
@@ -69,5 +51,5 @@
                   %i.fa.fa-bars.btn-lg{"ng-click" => "toggle('mainSidebar')"}
                 .col-xs-6
                   .text-right
-                    = link_to image_tag('logo.png', :border=>0, :alt => 'StartupRI', height: '40px', width: '143px' ), root_path, :class => ""
+                    = link_to image_tag('logo.png', :border=>0, :alt => 'StartupRI', :class => "mobile-logo"), root_path
             = yield

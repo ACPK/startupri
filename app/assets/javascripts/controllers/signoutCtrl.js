@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module( 'CallRed' ).controller( 'SignoutCtrl', ['$scope', function( $scope, $auth) {
+angular.module( 'StartupRI' ).controller( 'SignoutCtrl', ['$scope', function( $scope, $auth) {
   $scope.awesomeThings = [
     'HTML5 Boilerplate',
     'AngularJS',
@@ -16,8 +16,7 @@ angular.module( 'CallRed' ).controller( 'SignoutCtrl', ['$scope', function( $sco
           // handle error response
         });
     };
-
-    // // Need to get this to work with all pages as it's in the side bar....
+    
     // %button.btn.btn-primary.btn-lg{"ng-click" => "signOut()"} Sign out
 
 }]);

@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module( 'CallRed' ).controller( 'passwordresetCtrl', ['$scope', function( $scope, $auth) {
+angular.module( 'StartupRI' ).controller( 'passwordresetCtrl', ['$scope', function( $scope, $auth) {
   $scope.awesomeThings = [
     'HTML5 Boilerplate',
     'AngularJS',

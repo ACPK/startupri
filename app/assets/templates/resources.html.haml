@@ -1,0 +1,5 @@
+.page-header{"ng-repeat" => "resource in resources"}
+  %a{:href => "{{resource.url}}"}
+    %h2
+      {{resource.name}}
+      %small {{resource.description}}

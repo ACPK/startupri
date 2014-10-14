@@ -1,0 +1,5 @@
+.page-header{"ng-repeat" => "startup in startups"}
+  %a{:href => "{{startup.url}}"}
+    %h2
+      {{startup.name}}
+      %small {{startup.description}}

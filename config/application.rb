@@ -7,7 +7,7 @@ Bundler.require(*Rails.groups)
 module RailsAngularDevise
   class Application < Rails::Application
 
-    config.app_name = 'CallRed'
+    config.app_name = 'StartupRI'
 
     config.middleware.insert_before "ActionDispatch::Static", "Rack::Cors" do
       allow do

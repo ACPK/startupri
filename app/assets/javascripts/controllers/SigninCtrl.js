@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module( 'CallRed' ).controller( 'SigninCtrl', ['$scope', function( $scope, $auth ) {
+angular.module( 'StartupRI' ).controller( 'SigninCtrl', ['$scope', function( $scope, $auth ) {
 	$scope.awesomeThings = [
 		'HTML5 Boilerplate',
 		'AngularJS',
