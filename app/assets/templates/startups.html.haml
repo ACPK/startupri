@@ -1,5 +1,7 @@
-.page-header{"ng-repeat" => "startup in startups"}
+.list-group-item.media.events{"ng-repeat" => "startup in startups"}
   %a{:href => "{{startup.url}}"}
-    %h2
-      {{startup.name}}
-      %small {{startup.description}}
+    .media-body
+      %h3.media-heading
+        {{startup.name}}
+        %br/
+        %small {{startup.description}}

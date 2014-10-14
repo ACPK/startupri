@@ -6,6 +6,9 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
+Event.create(name: 'Demo Event', description: 'StartupRI Meetup Event', url: "http://meetup.com/startupri", start_time: '2014-10-27 15:00:00', end_time: '2014-10-27 15:00:00')
+Event.create(name: 'Old Event', description: 'StartupRI Meetup Event', url: "http://meetup.com/startupri", start_time: '2013-10-27 15:00:00', end_time: '2013-10-27 15:00:00')
+Event.create(name: 'Startup Event', description: 'StartupRI Meetup Event', url: "http://meetup.com/startupri", start_time: '2014-10-18 15:00:00', end_time: '2014-10-27 15:00:00')
 
 Resource.create(name: 'Hatch Entrepreneurial Center', url: "http://hatchri.com")
 

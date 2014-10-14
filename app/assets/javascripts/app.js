@@ -22,15 +22,15 @@ angular.module( 'StartupRI',
     apiUrl: '/api'
   });
 
-  $routeProvider.when( '/startups', { templateUrl: 'startups.html', controller: 'StartupsCtrl' } );
   $routeProvider.when( '/events', { templateUrl: 'events.html', controller: 'EventsCtrl' } );
+  $routeProvider.when( '/startups', { templateUrl: 'startups.html', controller: 'StartupsCtrl' } );
   $routeProvider.when( '/resources', { templateUrl: 'resources.html', controller: 'ResourcesCtrl' } );
 
-  // $routeProvider.when( '/signup', { templateUrl: 'signup.html', controller: 'SignupCtrl' } );
-  // $routeProvider.when( '/signin', { templateUrl: 'signin.html', controller: 'SigninCtrl' } );
   // $routeProvider.when( '/reset-password', { templateUrl: 'passwordreset.html', controller: 'passwordresetCtrl' } );
+  // $routeProvider.when( '/signin', { templateUrl: 'signin.html', controller: 'SigninCtrl' } );
+  // $routeProvider.when( '/signup', { templateUrl: 'signup.html', controller: 'SignupCtrl' } );
   
-  $routeProvider.otherwise( { redirectTo: '/startups' } );
+  $routeProvider.otherwise( { redirectTo: '/events' } );
 
   $locationProvider.html5Mode(true);
 } ] );

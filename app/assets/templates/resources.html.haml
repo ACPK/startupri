@@ -1,5 +1,7 @@
-.page-header{"ng-repeat" => "resource in resources"}
+.list-group-item.media.events{"ng-repeat" => "resource in resources"}
   %a{:href => "{{resource.url}}"}
-    %h2
-      {{resource.name}}
-      %small {{resource.description}}
+    .media-body
+      %h3.media-heading
+        {{resource.name}}
+        %br/
+        %small {{resource.description}}

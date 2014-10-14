@@ -1,1 +1,13 @@
-%h2.center Coming Soon
+.list-group-item.media.events{"ng-repeat" => "event in events"}
+  .pull-right.center
+    {{event.start_time | date:'EEE, MMM d'}}
+    %br/
+    {{event.start_time | date:'h:mm a'}}
+    %br/
+    {{event.location}}
+  %a{:href => "{{event.url}}"}
+    .media-body
+      %h3.media-heading
+        {{event.name}}
+        %br/
+        %small {{event.description}}

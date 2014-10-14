@@ -8,7 +8,7 @@ angular.module( 'StartupRI' ).controller( 'EventsCtrl', ['$scope', "$http", func
   ];
 
   $http.get('/api/v1/events.json').success(function(data) {
-    $scope.startups = data;
+    $scope.events = data;
   });
 
 }]);

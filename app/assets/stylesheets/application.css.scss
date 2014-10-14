@@ -35,6 +35,10 @@ a:link, a:hover, a:active { color: inherit; }
 .page-title {
  	text-align: center;
  }
+
+.list-group-item.media.events {
+	border-bottom: none;
+}
  
 .text-muted {color: #444;
 	& a {
