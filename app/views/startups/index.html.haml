@@ -1,0 +1,35 @@
+%h1 Listing startups
+
+%table
+  %tr
+    %th Name
+    %th Description
+    %th Logo
+    %th Url
+    %th Youtube
+    %th Facebook
+    %th Twitter
+    %th Crunchbase
+    %th User
+    %th
+    %th
+    %th
+
+  - @startups.each do |startup|
+    %tr
+      %td= startup.name
+      %td= startup.description
+      %td= startup.logo
+      %td= startup.url
+      %td= startup.youtube
+      %td= startup.facebook
+      %td= startup.twitter
+      %td= startup.crunchbase
+      %td= startup.user_id
+      %td= link_to 'Show', startup
+      %td= link_to 'Edit', edit_startup_path(startup)
+      %td= link_to 'Destroy', startup, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Startup', new_startup_path

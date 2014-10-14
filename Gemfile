@@ -7,6 +7,7 @@ gem 'activeadmin', github: 'activeadmin'
 gem 'browser'
 gem 'figaro'
 
+gem 'paperclip'
 gem 'pg'
 gem 'rack-ssl-enforcer'
 gem 'turbolinks'

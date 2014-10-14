@@ -15,8 +15,18 @@
           .text-center{:bubble => "", :target => "mainSidebar", :toggle => "off"}
             %br/
             %a{:href => "/"}
-              %img.text-center{alt: "Verify Business", src: "assets/logo.png", :alt => 'CallRed'}
+              %img.text-center{alt: "StartupRI", src: "assets/logo.png", :alt => 'CallRed'}
           %br/
+          .list-group{:bubble => "", :target => "mainSidebar", :toggle => "off"}
+            %a.list-group-item{:href => "/#/about"}
+              Startups
+              %i.fa.fa-chevron-right.pull-right
+            %a.list-group-item{:href => "/#/business"}
+              Events
+              %i.fa.fa-chevron-right.pull-right
+            %a.list-group-item{:href => "/#/hiring"}
+              Resources
+              %i.fa.fa-chevron-right.pull-right
           - if user_signed_in?
             .list-group{:bubble => "", :target => "mainSidebar", :toggle => "off"}
               %a.list-group-item{:href => "/inbox"}
@@ -36,19 +46,6 @@
               %a.list-group-item{:href => "/#/signup"}
                 Sign Up
                 %i.fa.fa-chevron-right.pull-right
-          .list-group{:bubble => "", :target => "mainSidebar", :toggle => "off"}
-            %a.list-group-item{:href => "/#/about"}
-              About
-              %i.fa.fa-chevron-right.pull-right
-            %a.list-group-item{:href => "/#/business"}
-              Businesses
-              %i.fa.fa-chevron-right.pull-right
-            %a.list-group-item{:href => "/#/hiring"}
-              Jobs
-              %i.fa.fa-chevron-right.pull-right
-            %a.list-group-item{:href => "/#/press"}
-              Press
-              %i.fa.fa-chevron-right.pull-right
           %ul.social.nav.nav-pills
             %li.social
               %a{ :'addthis:url' => 'http://startupri.org', :class => "btn fb-share addthis_button_facebook" }
@@ -60,10 +57,8 @@
                 SHARE
           .footer.text-center{:bubble => "", :target => "mainSidebar", :toggle => "off"}
             %span.footer-link © 2014
-            = link_to("/#/terms") do
-              %span.footer-link Terms
-            = link_to("/#/privacy") do
-              %span.footer-link Privacy
+            = link_to("https://github.com/ACPK/startupri") do
+              %span.footer-link View Source Code
     .container.app
       %div{"ng-class" => "viewBackground"}
         .scrollable
