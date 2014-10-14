@@ -7,3 +7,5 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 Startup.create(name: 'Startup RI', description: "Rhode Island's Startup Guide", url: "http://startupri.org")
+
+ResourceCategory.create(name: 'Office Space')
