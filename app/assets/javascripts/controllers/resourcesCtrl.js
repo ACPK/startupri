@@ -8,7 +8,7 @@ angular.module( 'StartupRI' ).controller( 'ResourcesCtrl', ['$scope', "$http", f
   ];
 
   $http.get('/api/v1/resources.json').success(function(data) {
-    $scope.startups = data;
+    $scope.resources = data;
   });
 
 }]);

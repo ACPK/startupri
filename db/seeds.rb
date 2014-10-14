@@ -6,6 +6,9 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-Startup.create(name: 'Startup RI', description: "Rhode Island's Startup Guide", url: "http://startupri.org")
+
+Resource.create(name: 'Hatch Entrepreneurial Center', url: "http://hatchri.com")
 
 ResourceCategory.create(name: 'Office Space')
+
+Startup.create(name: 'Startup RI', description: "Rhode Island's Startup Guide", url: "http://startupri.org")
