@@ -181,6 +181,9 @@ GEM
       websocket-driver (>= 0.2.0)
     polyamorous (1.1.0)
       activerecord (>= 3.0)
+    prerender_rails (1.1.1)
+      activesupport
+      rack
     pry (0.10.1)
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
@@ -301,6 +304,7 @@ DEPENDENCIES
   paperclip
   pg
   poltergeist
+  prerender_rails
   pry
   quiet_assets
   rack-cors

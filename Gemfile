@@ -27,7 +27,7 @@ gem 'font-awesome-rails'
 gem 'jquery-rails'
 gem 'haml'
 gem 'ng-rails-csrf'
-# gem 'prerender_rails'
+gem 'prerender_rails'
 gem 'sass-rails', '~> 4.0.3'
 
 # Nice stack trace if you get errors
