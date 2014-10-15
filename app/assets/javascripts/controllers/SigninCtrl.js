@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module( 'StartupRI' ).controller( 'SigninCtrl', ['$scope', function( $scope, $auth ) {
+angular.module( 'StartupRI' ).controller( 'SigninCtrl', ['$scope', function( $scope, $auth, $location ) {
 	$scope.awesomeThings = [
 		'HTML5 Boilerplate',
 		'AngularJS',
@@ -19,7 +19,7 @@ angular.module( 'StartupRI' ).controller( 'SigninCtrl', ['$scope', function( $sc
 
   $scope.$on('auth:login-success', function(ev, user) {
     toastr.clear()
-    toastr.success('Welcome ', user.email);
+    toastr.success("You're logged in");
   });
 
   $scope.$on('auth:login-error', function(ev, reason) {
