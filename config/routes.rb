@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
   
+  # devise_for :admin_users, ActiveAdmin::Devise.config
+  
+  ActiveAdmin.routes(self)
   namespace :api, defaults: {format: 'json'}, :path => "api" do
     namespace :v1 do
       resources :events
@@ -9,7 +12,7 @@ Rails.application.routes.draw do
     end
   end
 
-  mount_devise_token_auth_for 'User', at: '/auth'
+  mount_devise_token_auth_for 'User', at: '/api/v1/auth'
   
   root :to => 'home#index'
 
