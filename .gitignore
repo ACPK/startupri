@@ -27,3 +27,4 @@ pickle-email-*.html
 /vendor/bundle
 
 /config/application.yml
+/config/database.yml
