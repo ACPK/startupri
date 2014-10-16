@@ -14,6 +14,8 @@ Rails.application.routes.draw do
       resources :startups
     end
   end
+
+  get "meetup/getEvents"
   
   root :to => 'home#index'
 
