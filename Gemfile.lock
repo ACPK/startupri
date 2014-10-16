@@ -141,6 +141,7 @@ GEM
       activesupport (>= 3.0.0)
     mail (2.6.1)
       mime-types (>= 1.16, < 3)
+    meetup_client (0.0.6)
     method_source (0.8.2)
     mime-types (2.4.1)
     mini_portile (0.6.0)
@@ -299,6 +300,7 @@ DEPENDENCIES
   haml-rails
   jbuilder (~> 2.0)
   jquery-rails
+  meetup_client
   ng-rails-csrf
   omniauth-facebook
   paperclip

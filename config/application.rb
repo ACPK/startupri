@@ -7,14 +7,14 @@ Bundler.require(*Rails.groups)
 module RailsAngularDevise
   class Application < Rails::Application
 
-    config.app_name = 'StartupRI'
+    config.app_name = ENV["SITE_NAME"]
 
     config.middleware.insert_before "ActionDispatch::Static", "Rack::Cors" do
       allow do
         origins '*'
         resource '*',
           :headers => :any,
-          :expose  => ['access-token', 'expiry', 'token-type', 'uid', 'client', 'message', 'business_id'],
+          :expose  => ['access-token', 'expiry', 'token-type', 'uid', 'client'],
           :methods => [:get, :post, :options, :delete, :put]
       end
     end
