@@ -5,7 +5,7 @@ require 'net/http'
 class MeetupController < ApplicationController
 
 	respond_to :json
-	$meetupRI = "http://api.meetup.com/2/open_events?status=upcoming&radius=25.0&category=2&and_text=False&limited_events=False&desc=False&offset=0&photo-host=public&format=json&zip=02903&page=20&sig_id=20387841&sig=8949a7bf21502f3b687359ddb69b5ab8ccb042bc"
+	$meetupRI = ENV["MEETUP_API_URL"]
 
 	def getEvents
 		response = Net::HTTP.get_response(URI.parse($meetupRI))
