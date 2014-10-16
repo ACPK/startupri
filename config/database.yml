@@ -14,4 +14,8 @@ test:
 
 production:
   <<: *default
-  database: startupri-prod
+  host: ec2-23-21-243-117.compute-1.amazonaws.com
+  database: d1fsbkefhfp7is
+  user: wqzksuunkgrhtv
+  password: eV1vxQCG-EFAbrjmo9hat4WR-G
+  port: 5432

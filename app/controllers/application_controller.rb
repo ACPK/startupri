@@ -7,14 +7,6 @@ class ApplicationController < ActionController::Base
 
   before_action :set_device_type
 
-  def authenticate_active_admin_user!
-    # authenticate_user!
-    # unless current_user.superadmin?
-    #   flash[:alert] = "Unauthorized Access!"
-    #   redirect_to '/signin'
-    # end
-  end
-
   protected
 
   def set_device_type

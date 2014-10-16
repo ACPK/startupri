@@ -6,7 +6,6 @@ gem 'rails', '4.1.6'
 gem 'activeadmin', github: 'activeadmin'
 gem 'browser'
 gem 'figaro'
-
 gem 'paperclip'
 gem 'pg'
 gem 'rack-ssl-enforcer'
