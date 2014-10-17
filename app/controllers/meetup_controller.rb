@@ -3,7 +3,6 @@ require 'json'
 require 'net/http'
 
 class MeetupController < ApplicationController
-
 	respond_to :json
 	$meetupRI = ENV["MEETUP_API_URL"]
 
