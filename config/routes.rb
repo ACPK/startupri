@@ -16,6 +16,7 @@ Rails.application.routes.draw do
   end
 
   get "meetup/getEvents"
+  get "eventbrite/getEvents"
   
   root :to => 'home#index'
 
