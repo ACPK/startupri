@@ -6,7 +6,7 @@
     = javascript_include_tag 'ng-application'
     = csrf_meta_tags
     %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
-    / %meta{:content => "!", :name => "fragment"}/
+    %meta{:content => "!", :name => "fragment"}/
   %body{"ng-app" => "StartupRI"}
     / Sidebars
     #mainSidebar.sidebar.sidebar-left{"parent-active-class" => "sidebar-left-in", :toggleable => ""}
@@ -22,9 +22,9 @@
             %a.list-group-item{:href => "/events"}
               Events
               %i.fa.fa-chevron-right.pull-right
-            %a.list-group-item{:href => "/startups"}
-              Startups
-              %i.fa.fa-chevron-right.pull-right
+            / %a.list-group-item{:href => "/startups"}
+            /   Startups
+            /   %i.fa.fa-chevron-right.pull-right
             %a.list-group-item{:href => "/resources"}
               Resources
               %i.fa.fa-chevron-right.pull-right

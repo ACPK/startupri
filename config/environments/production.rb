@@ -4,6 +4,11 @@ Rails.application.configure do
   # SSL
   config.middleware.use Rack::SslEnforcer
 
+  # SEO
+  config.middleware.use Rack::Prerender, prerender_token: ENV["PRERENDER_TOKEN"]
+  config.middleware.use Rack::Prerender, whitelist: ['/events', '/resources']
+  config.middleware.use Rack::Prerender, protocol: 'https'
+
   # Code is not reloaded between requests.
   config.cache_classes = true
 
