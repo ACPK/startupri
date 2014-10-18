@@ -7,8 +7,8 @@ Mobile Angular UI: http://mobileangularui.com
 
 ## JSON API
 
-1. Events:  http://StartupRI.org/api/v1/events
+1. Events:  https://StartupRI.org/api/v1/events
 
-2. Startups:  http://StartupRI.org/api/v1/startups
+2. Startups:  https://StartupRI.org/api/v1/startups
 
-3. Resources:  http://StartupRI.org/api/v1/resources
+3. Resources:  https://StartupRI.org/api/v1/resources
