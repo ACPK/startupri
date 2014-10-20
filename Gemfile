@@ -12,6 +12,7 @@ gem 'pg'
 gem 'rack-ssl-enforcer'
 gem 'turbolinks'
 gem 'uglifier'
+gem 'whenever', :require => false
 
 # API
 gem 'bower-rails'
