@@ -5,7 +5,6 @@ gem 'rails', '4.1.6'
 
 
 gem 'activeadmin', github: 'activeadmin'
-gem 'browser'
 gem 'figaro'
 gem 'json'
 gem 'paperclip'
@@ -22,7 +21,7 @@ gem 'omniauth-facebook'
 gem 'rack-cors', :require => 'rack/cors'
 
 # Angular and theme stuff
-gem 'angularjs-rails'
+gem 'angularjs-rails', '1.2.22'
 gem 'angular-rails-templates'
 gem 'font-awesome-rails'
 gem 'jquery-rails'
