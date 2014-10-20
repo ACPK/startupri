@@ -35,7 +35,6 @@ ActiveRecord::Schema.define(version: 20141018035916) do
   end
 
   add_index "events", ["foreign_id"], name: "index_events_on_foreign_id", unique: true, using: :btree
-  add_index "events", ["location"], name: "index_events_on_location", using: :btree
 
   create_table "resource_categories", force: true do |t|
     t.string   "name"
