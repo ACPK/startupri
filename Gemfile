@@ -12,7 +12,7 @@ gem 'paperclip'
 gem 'pg'
 gem 'rack-ssl-enforcer'
 gem 'turbolinks'
-gem 'uglifier', '>= 1.3.0'
+gem 'uglifier'
 
 # API
 gem 'bower-rails'
@@ -29,7 +29,7 @@ gem 'jquery-rails'
 gem 'haml'
 gem 'ng-rails-csrf'
 gem 'prerender_rails'
-gem 'sass-rails', '~> 4.0.3'
+gem 'sass-rails'
 
 # Nice stack trace if you get errors
 gem 'better_errors'
@@ -47,7 +47,7 @@ group :test, :development do
   gem 'poltergeist'
   gem 'pry'
   gem 'rspec-rails'
-  gem 'simplecov', '~> 0.9', :require => false
+  gem 'simplecov', :require => false
 end
 
 group :production do 
