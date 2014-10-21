@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141018035916) do
+ActiveRecord::Schema.define(version: 20141020223606) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -31,7 +31,8 @@ ActiveRecord::Schema.define(version: 20141018035916) do
     t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.decimal  "foreign_id"
+    t.string   "foreign_id"
+    t.boolean  "hidden",             default: false
   end
 
   add_index "events", ["foreign_id"], name: "index_events_on_foreign_id", unique: true, using: :btree
