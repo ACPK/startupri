@@ -2,7 +2,7 @@ module Api::V1
   class StartupsController < ApplicationController
     
     def index
-      @startups = Startup.all
+      @startups = Startup.where('hidden = false')
       respond_to do |format|
         format.json
         format.xml { render xml: @startups, status: 200}
