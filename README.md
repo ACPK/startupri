@@ -1,14 +1,16 @@
 StartupRI.org
 =========
  
- ## Ultimate guide for local startup events, companies, and resources
+Ultimate guide for local startup events, companies, and resources.
 
 [![Build Status][BS img]][Build Status]
 [![Dependency Status][DS img]][Dependency Status]
 [![Code Climate][CC img]][Code Climate]
 [![Coverage Status][CS img]][Coverage Status]
 
-Mobile Angular UI: http://mobileangularui.com
+The site is built with Ruby on Rails in the back-end, and Angular.JS for the front-end.
+
+Mobile Angular UI Theme: http://mobileangularui.com
 
 ## Requirements
 
@@ -61,6 +63,13 @@ Mobile Angular UI: http://mobileangularui.com
 2. Startups:  https://StartupRI.org/api/v1/startups
 
 3. Resources:  https://StartupRI.org/api/v1/resources
+
+
+## Coming Soon Projects You Can Contribute To
+
+-  iPhone and Android Apps (Probably going to use Angular.JS and https://github.com/lynndylanhurley/ng-token-auth)
+-  Implement way to find local start-up resources automatically
+-  SEO and Pretender Implementation
 
 
 
