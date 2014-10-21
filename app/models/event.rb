@@ -1,5 +1,5 @@
 class Event < ActiveRecord::Base
-	# validates_presence_of :name, :description, :cost, :location, :url, :start_time
+	validates_presence_of :name, :url
 	belongs_to :user
 
 	def self.getMeetups
@@ -23,10 +23,10 @@ class Event < ActiveRecord::Base
 		data = response.body
 		parsed_response = JSON.parse(data)
 		parsed_response["events"].each do |event|
-			# if Event.where(:foreign_id => event["id"]).blank?
+			if Event.where(:foreign_id => event["id"]).blank?
 				e = Event.new(:name => event["name"]["text"], :description => HTML_Truncator.truncate(event["description"]["text"], 50), :url => event["url"], :start_time => event["start"]["local"], :end_time => event["end"]["local"], :foreign_id => event["id"], :location => event["venue"]["name"])
 				e.save
-			# end
+			end
 		end
 	end
 	
