@@ -33,7 +33,7 @@ Mobile Angular UI Theme: http://mobileangularui.com
 8.  $ Rake rb:migrate
 9.  $ Rake rb:setup
 10. Download New Events from Meetup and Eventbrite:  $ Rake new_events
-11. Download New Startups from Angellist and Crunchbase:  $ Rake new_events
+11. Download New Startups from Angellist and Crunchbase:  $ Rake new_statups
 12. Visit http://localhost:3000/admin, "events" or "startups", and mark any unwanted entries as "hidden"
    - If you just delete them, they will be created again when the rake task runs.
 
@@ -53,7 +53,9 @@ Mobile Angular UI Theme: http://mobileangularui.com
   -  Sample JSON: https://api.angel.co/1/tags/1712/startups
 
 4. Crunch Base
-  * Coming Soon!
+  -  https://developer.crunchbase.com
+  -  Sample JSON: 
+
 
 
 ## JSON API
@@ -70,7 +72,11 @@ Mobile Angular UI Theme: http://mobileangularui.com
 -  iPhone and Android Apps (Probably going to use Angular.JS and https://github.com/lynndylanhurley/ng-token-auth)
 -  Implement way to find local start-up resources automatically
 -  SEO and Pretender Implementation
+-  Auto-tweeting
+-  and more!
 
+## Other
+-  Cool JSON Viewer:  http://jsonviewer.stack.hu
 
 
 [Build Status]: https://travis-ci.org/ACPK/startupri
