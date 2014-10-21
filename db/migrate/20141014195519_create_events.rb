@@ -10,8 +10,11 @@ class CreateEvents < ActiveRecord::Migration
       t.attachment :image
       t.string :url
       t.integer :user_id
+      t.string :foreign_id
+      t.boolean :hidden,              :default => false
 
       t.timestamps
     end
+    add_index :events, :foreign_id,   :unique => true
   end
 end

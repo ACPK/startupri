@@ -123,6 +123,8 @@ GEM
       activesupport (>= 3.2, < 5)
     hashie (3.3.1)
     hike (1.2.3)
+    html_truncator (0.4.0)
+      nokogiri (~> 1.5)
     i18n (0.6.11)
     inherited_resources (1.4.1)
       has_scope (~> 0.6.0.rc)
@@ -297,6 +299,7 @@ DEPENDENCIES
   font-awesome-rails
   haml
   haml-rails
+  html_truncator
   jbuilder (~> 2.0)
   jquery-rails
   json
