@@ -2,7 +2,7 @@ Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
   # SSL
-  config.middleware.use Rack::SslEnforcer
+  # config.middleware.use Rack::SslEnforcer
 
   # SEO
   config.middleware.use Rack::Prerender, prerender_token: ENV["PRERENDER_TOKEN"]

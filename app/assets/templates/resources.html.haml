@@ -5,14 +5,14 @@
       %form{"ng-init" => "registrationForm = {}", "ng-submit" => "submitRegistration(registrationForm)", :role => "form"}
         .col-md-6.col-md-offset-2
           .form-group
-            %input.form-control{:name => "email", "ng-model" => "registrationForm.email", :placeholder => 'Email', :required => "required", :type => "email", :autofocus => true }
+            %input.form-control{:name => "email", "ng-model" => "registrationForm.email", :placeholder => 'Email', :required => "required", :type => "email"}
         .col-md-2
           .form-group
             %button.btn.btn-danger.btn-block{:type => "submit"} Sign Up
 .list-group-item.media.events{"ng-repeat" => "resource in resources"}
   %a{:href => "{{resource.url}}"}
     .media-body
-      %h3.media-heading
+      %h4.media-heading
         {{resource.name}}
         %br/
         %small {{resource.description}}
