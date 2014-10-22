@@ -88,4 +88,15 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+  config.action_mailer.default_url_options = { :host => ENV["SITE_URL"] }
+
+  config.action_mailer.smtp_settings = {
+      :address   => ENV["MAILJET_SMTP"],
+      :port      => 578,
+      :user_name => ENV["MAILJET_USERNAME"],
+      :password  => ENV["MAILJET_PASSWORD"]
+
+  }
+
 end

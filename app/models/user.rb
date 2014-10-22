@@ -8,4 +8,9 @@ class User < ActiveRecord::Base
   has_many :events, dependent: :destroy
   has_many :resources, dependent: :destroy
   has_many :startups, dependent: :destroy
+
+  def password_required?
+    super && provider.blank?
+  end
+
 end

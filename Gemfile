@@ -39,6 +39,10 @@ gem 'binding_of_caller'
 gem 'quiet_assets'
 gem 'webrick'
 
+group :development do
+  gem 'letter_opener'
+end
+
 group :test, :development do
   gem 'capybara'
   gem 'daemons'

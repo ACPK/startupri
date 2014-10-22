@@ -1,3 +1,14 @@
+.panel.panel-default
+  .panel-body
+    %h3.center Get The Hottest Rhode Island Startup Events and Resources Delivered Weekly
+    .row
+      %form{"ng-init" => "registrationForm = {}", "ng-submit" => "submitRegistration(registrationForm)", :role => "form"}
+        .col-md-6.col-md-offset-2
+          .form-group
+            %input.form-control{:name => "email", "ng-model" => "registrationForm.email", :placeholder => 'Email', :required => "required", :type => "email", :autofocus => true }
+        .col-md-2
+          .form-group
+            %button.btn.btn-danger.btn-block{:type => "submit"} Sign Up
 .list-group-item.media.events{"ng-repeat" => "startup in startups"}
   %a{:href => "{{startup.url}}"}
     .media-body

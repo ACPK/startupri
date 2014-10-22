@@ -36,6 +36,10 @@ Mobile Angular UI Theme: http://mobileangularui.com
 11. Download New Startups from Angellist and Crunchbase:  $ Rake new_statups
 12. Visit http://localhost:3000/admin, "events" or "startups", and mark any unwanted entries as "hidden"
    - If you just delete them, they will be created again when the rake task runs.
+13. Uses Letter Opener for testing email locally (https://github.com/ryanb/letter_opener)
+14. Sign up for http://mailjet.com, and include your email settings in Application.YML
+
+- For any questions or comments, find me at http://twitter.com/andrewcpkelley
 
 
 ## Data Sources
@@ -52,9 +56,9 @@ Mobile Angular UI Theme: http://mobileangularui.com
   -  https://angel.co/api
   -  Sample JSON: https://api.angel.co/1/tags/1712/startups
 
-4. Crunch Base
+4. CrunchBase
   -  https://developer.crunchbase.com
-  -  Sample JSON: 
+  -  Sample JSON: http://api.crunchbase.com/v/2/organizations?organization_types=company&location_uuids=0b4dddee615bed9bbdfc79d89322881d&user_key=[USER_KEY]
 
 
 
