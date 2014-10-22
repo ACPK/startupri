@@ -93,7 +93,7 @@ Rails.application.configure do
 
   config.action_mailer.smtp_settings = {
       :address   => ENV["MAILJET_SMTP"],
-      :port      => 578,
+      :port      => 25,
       :user_name => ENV["MAILJET_USERNAME"],
       :password  => ENV["MAILJET_PASSWORD"]
 

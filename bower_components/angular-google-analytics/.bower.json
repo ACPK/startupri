@@ -1,0 +1,29 @@
+{
+  "author": "revolunet",
+  "name": "angular-google-analytics",
+  "description": "Easy Analytics for your AngularJS application",
+  "version": "0.0.7",
+  "homepage": "https://github.com/revolunet/angular-google-analytics",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/revolunet/angular-google-analytics.git"
+  },
+  "main": "./dist/angular-google-analytics.min.js",
+  "dependencies": {
+    "angular": ">=1"
+  },
+  "devDependencies": {
+    "angular-mocks": ">=1",
+    "angular-scenario": ">=1"
+  },
+  "_release": "0.0.7",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.0.7",
+    "commit": "809419afa5fd52e55f418c9390cfa6c65b214c60"
+  },
+  "_source": "git://github.com/revolunet/angular-google-analytics.git",
+  "_target": "~0.0.7",
+  "_originalSource": "angular-google-analytics",
+  "_direct": true
+}
