@@ -1,4 +1,4 @@
 task :new_startups => :environment do
     Startup.getAngellist
-    Startup.GetCrunchbase
+    Startup.getCrunchbase
 end
