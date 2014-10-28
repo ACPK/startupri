@@ -3,11 +3,6 @@ StartupRI.org
  
 Ultimate guide for local startup events, companies, and resources.
 
-[![Build Status][BS img]][Build Status]
-[![Dependency Status][DS img]][Dependency Status]
-[![Code Climate][CC img]][Code Climate]
-[![Coverage Status][CS img]][Coverage Status]
-
 The site is built with Ruby on Rails in the back-end, and Angular.JS for the front-end.
 
 Mobile Angular UI Theme: http://mobileangularui.com
@@ -81,15 +76,3 @@ Mobile Angular UI Theme: http://mobileangularui.com
 
 ## Other
 -  Cool JSON Viewer:  http://jsonviewer.stack.hu
-
-
-[Build Status]: https://travis-ci.org/ACPK/startupri
-[travis pull requests]: https://travis-ci.org/ACPK/startupri/pull_requests
-[Dependency Status]: https://gemnasium.com/ACPK/startupri
-[Code Climate]: https://codeclimate.com/github/ACPK/startupri
-[Coverage Status]: https://coveralls.io/r/ACPK/startupri
-
-[BS img]: https://travis-ci.org/ACPK/startupri.png
-[DS img]: https://gemnasium.com/ACPK/startupri.png
-[CC img]: https://codeclimate.com/github/ACPK/startupri.png
-[CS img]: https://coveralls.io/repos/ACPK/startupri/badge.png?branch=master
